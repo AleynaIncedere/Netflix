@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Bowlby One SC' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">NET <span>FLIX</span></h1>
+        <h3 id="description">
+            Netflix'e kaydolduğunuz için teşekkür ederiz. Bize kendiniz hakkında daha fazla bilgi verin.
+        </h3>
+        <form action="p" id="form-current">
+            <div class="box">
+                <label for="name">İsim</label><br>
+                <input type="text" id="name" name="name" placeholder="Adınızı giriniz" required><br><br>
+            </div>
+            <div class="box">
+                <label for="age">Yaş</label><br>
+                <input type="text" id="age" name="age" placeholder="Yaş" required><br><br>
+            </div>
+            <div class="box">
+                <label for="mail">E-posta</label>
+                <input type="text" id="mail" name="mail" placeholder="örnek@netflix.com" pattern=".+@example\.com" required><br><br>
+            </div>
+
+            <div class="box">
+                <label for="dropdown">İçerik türü:</label>
+                <select id="dropdown" name="content">
+                    <option value="film">Film</option>
+                    <option value="seri">Seri</option>
+                </select>
+            </div>
+            <div class="box">
+                <label id="checkbox">Film türü</label><br><br>
+                <input type="checkbox" id="comedy" name="comedy"/>
+                <label for="comedy">Komedi</label><br>      
+                <input type="checkbox" id="action" name="action"/>
+                <label for="action">Aksiyon</label><br>
+                <input type="checkbox" id="romantic" name="romantic"/>
+                <label for="romantic">Romantik</label><br><br>
+            </div>
+            
+            <div class="box">
+                <label id="btn">Cinsiyet</label><br><br>
+                <input type="radio" id="male" name="gender">
+                <label for="male">Erkek</label><br>
+                <input type="radio" id="famele" name="gender" checked>
+                <label for="famele">Dişi</label><br>
+                <input type="radio" id="diger" name="gender">
+                <label for="diger">Diğer</label><br>
+            </div>
+            <br>
+            <div class="box">
+                <label for="feedback">Geri Bildirim</label><br><br>
+                <textarea name="notification" rows="8" cols="50" required>Yorumunuzu Girin
+        </textarea>
+            </div>
+            <div class="button">
+                <input type="submit" id="submit" value="Göndermek">
+            </div>
+    </div>
+    </form>
+    </div>
+</body>
+
+</html>
